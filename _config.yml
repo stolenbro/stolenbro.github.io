@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 title: "Lightning"
+show_downloads: true
+google_analytics:
