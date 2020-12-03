@@ -1,17 +1,17 @@
-<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="https://thecloudybot.github.io/css/moving.css">
+<div class="background-image"></div>
 
 <html lang="en">
 <title>Cloudy Bot</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body style="background-image: url('https://i.pinimg.com/originals/4a/96/e6/4a96e602750b8ef669a77565becf3939.gif');">
 <h1> 
 <font size = "5"
 face="verdana"
@@ -38,43 +38,45 @@ Thanks for inviting cloudy bot!
 <footer> 
 <font size = "3">
 Made by ダ S#0666
+</font>
 </footer>
 </div>
   
 <header style="padding:250px 16px">
 <footer style="padding:10px 16px">
-</body>
-</html>
+
 <style>
 .center {
 margin: 0;
 position: absolute;
-left: 45%;
+left: 40%;
 -ms-transform: translateY(-50%);
 transform: translateY(-50%);
 }
 </style>
+
 <style>
 .center2 {
 margin: 0;
 position: absolute;
-left: 38%;
+left: 40%;
 -ms-transform: translateY(-50%);
 transform: translateY(-50%);
 }
 </style>
+
 <style>
 .center3 {
 margin: 0;
 position: absolute;
 top: 50%;
-left: 38%;
+left: 35%;
 -ms-transform: translateY(-50%);
 transform: translateY(-50%);
 }
 </style>
   
- <style>
+<style>
 .text1 {
 margin: 0;
 position: absolute;
@@ -84,3 +86,22 @@ left: 45%;
 transform: translateY(-50%);
 }
 </style>
+
+<script>
+const bg = document.querySelector('.background-image');
+const windowWidth = window.innerWidth / 5;
+const windowHeight = window.innerHeight / 5 ;
+
+bg.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX / windowWidth;
+  const mouseY = e.clientY / windowHeight;
+  
+  bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+});
+</script>
+</footer>
+</header>
+</font>
+</h2>
+</h1>
+</html>
