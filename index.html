@@ -15,12 +15,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
 </script>
 
+<link rel="stylesheet" href="https://thecloudybot.github.io/css/moving.css">
+<div class="background-image"></div>
+
 <html lang="en">
 <title>Cloudy Bot</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body style="background-image: url('https://i.pinimg.com/originals/4a/96/e6/4a96e602750b8ef669a77565becf3939.gif');">
 <h1> 
 <font size = "5"
 face="verdana"
@@ -106,9 +108,23 @@ transform: translateY(-50%);
 .text1 {
 margin: 0;
 position: absolute;
-top: 98%;
-left: 45%;
+top: 97%;
+left: 50%;
 -ms-transform: translateY(-50%);
 transform: translateY(-50%);
 }
 </style>
+
+
+<script>
+const bg = document.querySelector('.background-image');
+const windowWidth = window.innerWidth / 5;
+const windowHeight = window.innerHeight / 5 ;
+
+bg.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX / windowWidth;
+  const mouseY = e.clientY / windowHeight;
+  
+  bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+});
+</script>
