@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic);
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 110%;
+  height: 110%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: url('https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450.jpg') no-repeat left center / cover;
+}
+
+/* Not needed styles */
+
+h1 {
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  z-index: 9;
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
