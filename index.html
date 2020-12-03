@@ -172,7 +172,31 @@ transform: translateY(-50%);
 }
 </style>
 
-
+<style>
+@media only screen and (max-width:800px) {
+  .button1 {
+    top: 55%;
+    left: 26%;
+  }
+  .button2 {
+    top: 55%;
+    left: 45%;
+  }
+  .button3 {
+    top: 55%;
+    left: 69%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .button1, .button2, .button3 {
+    top: 55%;
+  }
+}
+</style>
+  
 <script>
 const bg = document.querySelector('.background-image');
 const windowWidth = window.innerWidth / 5;
