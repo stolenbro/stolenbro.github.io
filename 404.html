@@ -1,209 +1,92 @@
-<title>ERROR</title>
-<link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-</script>
+<head>
+  <title>Cloudy | 404</title>
+  <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MrSheldon">    
+</head>
 <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .column {
-      float: left;
-      width: 15%;
-      padding: 0 5px;
-    }
-    .row {margin: 0 -5px;}
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 10px;
+  * {
+      margin: 0;
+      padding: 0;
+      background-color: #191919;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default
+  }
+  
+  h1 {
+      font-size: 10rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 700
+  }
+  
+  h1,
+  h2 {
+      font-family: Roboto, sans-serif;
+      color: #fff;
+      margin-top: 30vh
+  }
+  
+  h2 {
+      margin-top: 5px
+  }
+  
+  .container {
+      width: 23rem;
+      border-bottom: 3px solid #fff;
+      position: relative;
+      margin: 0 auto;
+      padding-bottom: 10px
+  }
+  
+  #star {
+      position: absolute;
+      color: #fff;
+      bottom: 3rem;
+      right: 23rem;
+      margin-bottom: 50px;
+      color: rgba(255, 0, 0, .7);
+      font-size: 7rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 700
+  }
+  
+  @-webkit-keyframes rotation {
+      0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0)
       }
-    }
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      text-align: center;
-      background-color: rgb(43, 42, 42);
-      color: white;
-    }
-    .position {
-    position: absolute;
-    top: 75%;
-    left: 38%;
-    width: 25%;
-    }
-    .fa {font-size:50px;}
-    </style>
-    <div class="row">
-    <div class="column">
-    <div class="card zoom position">
-    <p><i class="fa fa-user"></i></p>
-    <h3>ERROR 404</h3>
-    <p>NOT FOUND</p>
-    </div>
-    </div>
-    <style>
-    .zoom:hover {
-        transform: scale(1.05);
+      100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg)
       }
-    </style>
-    <style>
-    .parallax {
-        background-image: url("https://cdn.discordapp.com/attachments/783872932619354113/789920668690677800/1594a6d06fe8d0c080827d65d054b272.png");
-        height: 500px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
-    <div class="parallax"></div>
-    <div style="height:1000px;background-color:#242323;font-size:36px">
-    </div>
-    <h1> 
-    <font size = "5"
-    face="verdana"
-    color="white">
-    <div class="center">
-    Cloudy Bot
-    </div>
-    </font> 
-    <br> 
-    <style>
-    h1 {
-    margin: 0;
-    padding: 0;
-    pointer-events: none;
-    white-space: nowrap;
-    font-family: 'Lobster Two', cursive;
-    font-style: italic;
-    z-index: 9;
-    font-size: 100px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-50%,0);
-    }
-   </style>
-   </h1>
-   </div>
-   </div>
-   </div>
-   <style>
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #66000000; 
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #494949; 
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #292929; 
-    }
-    body {
-      overflow-x: hidden;
-    }
-   </style>   
-    <a id="button"></a>
-    <style>
-    #button {
-        display: inline-block;
-        background-color: rgb(43, 42, 42);
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        border-radius: 4px;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        transition: background-color .3s, 
-          opacity .5s, visibility .5s;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 1000;
+  }
+  
+  @keyframes rotation {
+      0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0)
       }
-      #button::after {
-          
-        content: "˄";
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 2em;
-        line-height: 50px;
-        color: #fff;
+      100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg)
       }
-      #button:hover {
-        cursor: pointer;
-        background-color: #333;
+  }
+  
+  @media (max-width:430px) {
+      #star {
+          right: 2rem
       }
-      #button:active {
-        background-color: #555;
+      .container {
+          margin: -30px auto
       }
-      #button.show {
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      /* Styles for the content section */
-      
-      .content {
-        width: 77%;
-        margin: 50px auto;
-        font-family: 'Merriweather', serif;
-        font-size: 17px;
-        color: #6c767a;
-        line-height: 1.9;
-      }
-      @media (min-width: 500px) {
-        .content {
-          width: 43%;
-        }
-        #button {
-          margin: 30px;
-        }
-      }
-      .content h1 {
-        margin-bottom: -10px;
-        color: #6f7577;
-        line-height: 1.5;
-      }
-      .content h3 {
-        font-style: italic;
-        color: #03a9f4;
-      }
-    </style>
-    <script>
-      var btn = $('#button');
-
-        $(window).scroll(function() {
-          if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-          } else {
-            btn.removeClass('show');
-          }
-        });
-        
-        btn.on('click', function(e) {
-          e.preventDefault();
-          $('html, body').animate({scrollTop:0}, '300');
-        });
-        
-    </script>
-
+  }
+</style>
+<div class=container>
+  <h1 class="animated fadeInDown">404</h1>
+  <h2 class="animated fadeInUp">Page not found</h2>
+</div>

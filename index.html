@@ -1,282 +1,40 @@
-<title>Cloudy Bot</title>
-<link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
+<html lang="en">
+  <head>
+    <title>Cloudy</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MrSheldon">
+    <link id="theme-style" rel="stylesheet" href="css/main.css">
+  </head>
+
 <header>
-<meta property="og:site_name" content="Cloudy Bot">
-<meta property="og:url" content="https://thecloudybot.github.io/">
-<meta property="og:image"content="https://cdn.discordapp.com/attachments/783872932619354113/784152960769720382/82a9dfceb68e8418c68f4c817dc8f1a0.png">
-<meta property="og:title" content="Cloudy">
-<meta property="og:description" content="Discord bot developed with Discord.js">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#305BD3">
+  <meta property="og:site_name" content="Cloudy Bot">
+  <meta property="og:url" content="https://thecloudybot.github.io/">
+  <meta property="og:image"content="https://cdn.discordapp.com/attachments/783872932619354113/784152960769720382/82a9dfceb68e8418c68f4c817dc8f1a0.png">
+  <meta property="og:title" content="Cloudy">
+  <meta property="og:description" content="Discord bot developed with Discord.js">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#305BD3">
 </header>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/cloud-4436-1150010.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-</script>
-<style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .column {
-      float: left;
-      width: 15%;
-      padding: 0 5px;
-    }
-    .row {margin: 0 -5px;}
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 10px;
-      }
-    }
-    .card {
-      box-shadow: 0 4px 8px 0 rgb(40, 40, 40);
-      padding: 10px;
-      text-align: center;
-      background-color: rgb(30, 30, 30);
-      color: white;
-    }
-    .position {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    width: 25%;
-    }
-    .position2 {
-    position: absolute;
-    top: 75%;
-    left: 38%;
-    width: 25%;
-    }
-    .position3 {
-    position: absolute;
-    top: 75%;
-    left: 66%;
-    width: 25%;
-    }
-    .position4 {
-    position: absolute;
-    top: 95%;
-    left: 38%;
-    width: 25%;
-    }
-    .round {
-    border-radius: 10px;    
-    }
-    .fa {font-size:50px;}
-    </style>
-    <div class="row">
-    <div class="column">
-    <div class="card zoom position round">
-    <p><i class="fa fa-user"></i></p>
-    <h3>Discord.js</h3>
-    <p>Discord.js is what Cloudy Bot was scripted/coded with! Learn Discord js <a href="https://discord.js.org/#/">here!</a></p>
-    </div>
-    </div>
-    <style>
-    .zoom:hover {
-        transform: scale(1.05);
-      }
-    .fa {font-size:50px;}
-    </style>
-    <div class="row">
-    <div class="column">
-    <div class="card zoom position2 round">
-    <p><i class="fa fa-user"></i></p>
-    <h3>Invite Cloudy</h3>
-    <p>If you want to invite Cloudy to your discord server, you can <a href="https://discord.com/oauth2/authorize?client_id=778730757136318544&permissions=8&scope=bot&response_type=code&redirect_uri=https://thecloudybot.github.io/invited.html">here!</a></p>
-    </div>
-    </div>
-    <style>
-    .zoom:hover {
-        transform: scale(1.05);
-      }
-      .fa {font-size:50px;}
-    </style>
-    <div class="row">
-    <div class="column">
-    <div class="card zoom position3 round">
-    <p><i class="fa fa-user"></i></p>
-    <h3>Support</h3>
-    <p>You can join the Cloudy support discord server <a href="https://discord.gg/r3DBfFYTfN">here!</a> If you have any problems.</p>
-    </div>
-    </div>
-    <style>
-    .zoom:hover {
-        transform: scale(1.05);
-      }
-      .fa {font-size:50px;}
-    </style>
-    <div class="row">
-    <div class="column">
-    <div class="card zoom position4 round">
-    <p><i class="fa fa-user"></i></p>
-    <h3>Vote</h3>
-    <p>
-     Make sure to vote for Cloudy on Top.gg <a href="https://top.gg/bot/778730757136318544/vote">here!</a>
-    </p>
-    </div>
-    </div>
-    <style>
-    .zoom:hover {
-        transform: scale(1.05);
-      }    
-    </style>
-    <style>
-    .parallax {
-        background-image: url("https://cdn.discordapp.com/attachments/783872932619354113/789920668690677800/1594a6d06fe8d0c080827d65d054b272.png");
-        height: 500px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
-    <div class="parallax"></div>
-    <div style="height:1000px;background-color:rgb(25, 25, 25);font-size:36px">
-    </div>
-    <h1> 
-    <font size = "5"
-    face="verdana"
-    color="white">
-    <div class="center">
-    Cloudy Bot
-    </div>
-    </font> 
-    <br> 
-    <style>
-    h1 {
-    margin: 0;
-    padding: 0;
-    pointer-events: none;
-    white-space: nowrap;
-    font-family: 'Lobster Two', cursive;
-    font-style: italic;
-    z-index: 9;
-    font-size: 100px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-50%,0);
-    }
-   </style>
-   </h1>
-   </div>
-   </div>
-   </div>
-   <style>
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #66000000; 
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #494949; 
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #292929; 
-    }
-    body {
-      overflow-x: hidden;
-    }
-   </style>   
-    <a id="button"></a>
-    <style>#button {
-        display: inline-block;
-        background-color: rgb(43, 42, 42);
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        border-radius: 4px;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        transition: background-color .3s, 
-          opacity .5s, visibility .5s;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 1000;
-      }
-      #button::after {
-          
-        content: "˄";
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 2em;
-        line-height: 50px;
-        color: #fff;
-      }
-      #button:hover {
-        cursor: pointer;
-        background-color: #333;
-      }
-      #button:active {
-        background-color: #555;
-      }
-      #button.show {
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      /* Styles for the content section */
-      
-      .content {
-        width: 77%;
-        margin: 50px auto;
-        font-family: 'Merriweather', serif;
-        font-size: 17px;
-        color: #6c767a;
-        line-height: 1.9;
-      }
-      @media (min-width: 500px) {
-        .content {
-          width: 43%;
-        }
-        #button {
-          margin: 30px;
-        }
-      }
-      .content h1 {
-        margin-bottom: -10px;
-        color: #6f7577;
-        line-height: 1.5;
-      }
-      .content h3 {
-        font-style: italic;
-        color: #03a9f4;
-      }</style>
-      <script>var btn = $('#button');
+<body bgcolor="#191919">
 
-        $(window).scroll(function() {
-          if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-          } else {
-            btn.removeClass('show');
-          }
-        });
-        
-        btn.on('click', function(e) {
-          e.preventDefault();
-          $('html, body').animate({scrollTop:0}, '300');
-        });
-        
-        </script>
+  <div class="flex-item">
+      <img src="https://cdn.discordapp.com/attachments/803354750850301982/803364665178587136/transparent-picture.png" alt="" width="800" height="600" style="float: left;" />
+      <div>
+          <h1 class="ariel" style="font-size:60px;"><span style="color: #ffffff;">Cloudy</span></h1>
+          <div class="ariel" style="font-size:40px;"><span style="color: #ffffff;">Cloudy Discord Bot</span></div>
+          <br>
+          <p><button class="btn"><a href="https://discord.com/oauth2/authorize?client_id=778730757136318544&permissions=8&scope=bot&response_type=code&redirect_uri=https://thecloudybot.github.io/invited.html">Invite</a></button>&nbsp; &nbsp;<button class="btn"><a href="https://discord.gg/r3DBfFYTfN">Support</a></button>&nbsp; &nbsp;<button class="btn"><a href="https://top.gg/bot/778730757136318544/vote">Vote</a></button>&nbsp; &nbsp;<button class="btn"><a href="https://cloudy-js.com/beats">Beats Bot</a></button></p>
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+      </div>
+  </div>
+</body>
 
-    
+</html>
